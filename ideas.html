@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ideas - H. Madhav Portfolio</title>
+    <link rel="stylesheet" href="idea_styles.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="homepage.html" onclick="showMainContent(); return false;">H. Madhav</a></div>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="work.html">Work</a></li>
+                <li><a href="ideas.html">Ideas</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><button class="hire-now">Hire Now</button></li>
+            </ul>
+        </nav>
+    </header>
+  <main class="ideas-container">
+        <div class="idea-card" data-image="short-films.jpg">
+            <img src="images/testimage2.png" alt="Short Films">
+            <div class="idea-content">
+                <h2>Short Films</h2>
+            </div>
+        </div>
+        <div class="idea-card" data-image="game-design.jpg">
+            <img src="instrumetal/cerebrus-pup.png" alt="Game Design">
+            <div class="idea-content">
+                <h2>Game Design</h2>
+            </div>
+        </div>
+        <div class="idea-card" data-image="cartoons.jpg">
+            <img src="images/flatcolours.png" alt="Cartoons">
+            <div class="idea-content2">
+                <h2>Cartoons</h2>
+            </div>
+        </div>
+        <div class="idea-card coming-soon">
+            <div class="idea-content">
+                <h2>Coming soon</h2>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>I specialize in crafting exceptional digital experiences to help my clients achieve their business goals.</p>
+            <button class="hire-now">Hire Now</button>
+        </div>
+        <div class="footer-links">
+            <div class="footer-column">
+                <a href="work.html">Work</a>
+                <a href="ideas.html">Ideas</a>
+                <a href="Contact.html">Contact</a>
+            </div>
+            <div class="footer-column">
+                <a href="#">Twitter</a>
+                <a href="https://www.behance.net/Harsh_Madhav">Behance</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-content">
+        <p>I specialize in crafting exceptional digital experiences to help my clients achieve their business goals.</p>
+        <button class="hire-now">Hire Now</button>
+    </div>
+    <div class="footer-links">
+        <div class="footer-column">
+            <a href="work.html">Work</a>
+            <a href="ideas.html">Ideas</a>
+            <a href="Contact.html">Contact</a>
+        </div>
+        <div class="footer-column">
+            <a href="#">Twitter</a>
+            <a href="https://www.behance.net/Harsh_Madhav">Behance</a>
+            <a href="#">Instagram</a>
+        </div>
+    </div>
+</footer>
+    </footer>
+
+    <script>
+     document.addEventListener('DOMContentLoaded', function() {
+    const ideaCards = document.querySelectorAll('.idea-card');
+    const totalCards = ideaCards.length;
+    const expandedFlex = 2;
+    const collapsedFlex = (totalCards - expandedFlex) / (totalCards - 1);
+
+    ideaCards.forEach(card => {
+        card.addEventListener('mouseenter', () => {
+            ideaCards.forEach(c => {
+                if (c === card) {
+                    c.style.flex = expandedFlex;
+                } else {
+                    c.style.flex = collapsedFlex;
+                }
+            });
+        });
+
+        card.addEventListener('mouseleave', () => {
+            ideaCards.forEach(c => {
+                c.style.flex = 1;
+            });
+        });
+    });
+});
+
+
+    </script>
+</body>
+</html>

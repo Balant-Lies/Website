@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shiver Glass Studio - H. Madhav Portfolio</title>
+    <style>
+/* Add this to your existing CSS */
+.project-sidebar {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.project-sidebar.visible {
+    opacity: 1;
+}
+.project-sidebar ul ul {
+    display: none;
+    margin-left: 1rem;
+}
+.project-sidebar ul ul.active {
+    display: block;}
+/* Reset and base styles */
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body, html {
+        font-family: 'DM Sans', sans-serif;
+        background-color: #000;
+        color: #fff;
+        line-height: 1.6;
+        height: 100%;
+    }
+
+    /* Header styles */
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 1rem 5%;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 1000;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
+    .nav-menu {
+        display: flex;
+        list-style: none;
+    }
+
+    .nav-menu li {
+        margin-left: 2rem;
+    }
+
+    .nav-menu a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .hire-now {
+        background-color: #fff;
+        color: #000;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    /* Hamburger menu styles */
+    .hamburger {
+        display: none;
+        cursor: pointer;
+    }
+
+    .hamburger span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        background-color: #fff;
+        transition: all 0.3s ease-in-out;
+    }
+
+    /* Project sidebar styles */
+    .project-sidebar {
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .project-sidebar.visible {
+        opacity: 1;
+    }
+
+    .project-sidebar ul ul {
+        display: none;
+        margin-left: 1rem;
+    }
+
+    .project-sidebar ul ul.active {
+        display: block;
+    }
+
+    /* Mobile styles */
+    @media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    .nav-menu.active {
+        display: flex;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-menu li {
+        margin: 10px 0;
+    }
+
+    .hire-now {
+        margin-top: 10px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger, .logo {
+        z-index: 1001;
+    }
+}
+
+    </style>
+    <link rel="stylesheet" href="project-styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="homepage.html">H. Madhav</a></div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="work.html">Work</a></li>
+                <li><a href="ideas.html">Ideas</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><button class="hire-now">Hire Now</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <nav class="project-sidebar">
+        <ul>
+            <li>
+                <a href="#overview">Overview</a>
+                <ul>
+                    <li><a href="#project-scope">Project Scope</a></li>
+                    <li><a href="#objectives">Objectives</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#challenge">Challenge</a>
+                <ul>
+                    <li><a href="#market-analysis">Market Analysis</a></li>
+                    <li><a href="#user-needs">User Needs</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#solution">Solution</a>
+                <ul>
+                    <li><a href="#design">Design</a></li>
+                    <li><a href="#implementation">Implementation</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#results">Results</a>
+                <ul>
+                    <li><a href="#impact">Impact</a></li>
+                    <li><a href="#feedback">Feedback</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="project-content">
+        <div class="full-width-header">
+            <img src="images/Shiver Glass-01.jpg" alt="Shiver Glass Studio">
+            <h1 class="header-title">Shiver Glass Studio</h1>
+        </div>
+    
+        <section id="overview" class="content-section">
+            <h2 class="section-title">Overview</h2>
+            <p class="section-text">Shiver Glass Studio is a cutting-edge design firm specializing in immersive storytelling and interactive experiences. Our innovative approach combines technology and creativity to push the boundaries of visual communication.</p>
+            <h3 id="project-scope" class="subsection-title">Project Scope</h3>
+            <p class="section-text">This project encompasses the complete rebranding of Shiver Glass Studio, including logo design, brand identity, and a suite of marketing materials that reflect our commitment to innovation and storytelling.</p>
+            <h3 id="objectives" class="subsection-title">Objectives</h3>
+            <ul class="objective-list">
+                <li>Establish a strong, memorable brand identity</li>
+                <li>Showcase our expertise in immersive storytelling</li>
+                <li>Create a cohesive visual language across all touchpoints</li>
+                <li>Position Shiver Glass Studio as a leader in interactive experiences</li>
+            </ul>
+        </section>
+    
+        <section id="challenge" class="content-section">
+            <h2 class="section-title">Challenge</h2>
+            <p class="section-text">Our primary challenge was to create a brand identity that captures the essence of Shiver Glass Studio's innovative spirit while remaining accessible and engaging to our diverse clientele.</p>
+            <h3 id="market-analysis" class="subsection-title">Market Analysis</h3>
+            <p class="section-text">Through extensive research, we identified a gap in the market for design studios that specialize in immersive storytelling. This presented an opportunity for Shiver Glass Studio to establish itself as a pioneer in this niche.</p>
+            <h3 id="user-needs" class="subsection-title">User Needs</h3>
+            <p class="section-text">Our target audience craves experiences that are not only visually stunning but also emotionally engaging. They seek brands that can transport them to new worlds and tell stories in innovative ways.</p>
+        </section>
+    
+        <section id="solution" class="content-section">
+            <h2 class="section-title">Solution</h2>
+            <h3 id="design" class="subsection-title">Design</h3>
+            <p class="section-text">Our design solution revolves around the concept of 'shattered reality,' using fractured glass motifs to represent the breaking of conventional boundaries in storytelling and design.</p>
+            <h3 id="implementation" class="subsection-title">Implementation</h3>
+            <p class="section-text">We implemented this concept across various touchpoints, including a dynamic logo, an immersive website, and a series of striking marketing materials.</p>
+            <div class="image-grid">
+                <img src="images/posters-01.png" alt="Solution Image 1" class="grid-image">
+                <img src="images/posters-02.png" alt="Solution Image 2" class="grid-image">
+                <img src="images/posters-03.png" alt="Solution Image 3" class="grid-image">
+            </div>
+            <div class="vision-mission-aim">
+                <div class="vision">
+                    <h4 class="subsection-title">Vision</h4>
+                    <p class="section-text">To be one of the exploratory brands in immersive storytelling conveying information and entertainment</p>
+                </div>
+                <div class="mission">
+                    <h4 class="subsection-title">Mission</h4>
+                    <p class="section-text">Our mission is to craft immersive experiences that transcend the glass, stirring sensations and igniting imaginations. Through innovative storytelling, we redefine interactive entertainment, leaving a lasting impression on all who dare to explore our realms.</p>
+                </div>
+                <div class="aim">
+                    <h4 class="subsection-title">Aim</h4>
+                    <p class="section-text">To craft experiences which both entertain and engage people, whether on a deeper level or just on the surface - they get to choose</p>
+                </div>
+            </div>
+        </section>
+    
+        <section id="results" class="content-section">
+            <h2 class="section-title">Results</h2>
+            <p class="section-text">The rebranding of Shiver Glass Studio has been met with overwhelming positive feedback from both clients and industry peers.</p>
+            <h3 id="impact" class="subsection-title">Impact</h3>
+            <p class="section-text">Since the launch of our new brand identity, we've seen a 50% increase in client inquiries and a 30% boost in social media engagement.</p>
+            <h3 id="feedback" class="subsection-title">Feedback</h3>
+            <blockquote class="testimonial">
+                "Shiver Glass Studio's new brand identity perfectly captures their innovative approach to storytelling. It's fresh, exciting, and unlike anything else in the industry." - Industry Expert
+            </blockquote>
+        </section>
+    </main>
+    
+
+    <footer>
+
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const sidebar = document.querySelector('.project-sidebar');
+            const headerHeight = document.querySelector('.full-width-header').offsetHeight;
+            const sidebarLinks = sidebar.querySelectorAll('a');
+            const hireButtons = document.querySelectorAll('.hire-now');
+            const hamburger = document.querySelector('.hamburger');
+            const navMenu = document.querySelector('.nav-menu');
+    
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > headerHeight - 100) {
+                    sidebar.classList.add('visible');
+                } else {
+                    sidebar.classList.remove('visible');
+                }
+            });
+    
+            sidebarLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 60,
+                        behavior: 'smooth'
+                    });
+    
+                    // Toggle submenu
+                    const submenu = this.nextElementSibling;
+                    if (submenu && submenu.tagName === 'UL') {
+                        submenu.classList.toggle('active');
+                    }
+                });
+            });
+    
+            hireButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const email = 'harshmadhav2@gmail.com';
+                    const subject = 'Hire Inquiry';
+                    const body = "I'm interested in hiring you for a project.";
+                    
+                    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+                    
+                    window.open(gmailUrl, '_blank');
+                });
+            });
+    
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            });
+    
+            document.querySelectorAll('.nav-menu li a').forEach(n => n.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            }));
+        });
+    </script>
+    
+    
+</body>
+</html>
